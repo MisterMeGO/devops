@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                echo "Версия СПО {version}"
+                echo "Версия СПО ${version}"
                 echo "${releaseNotes}"
             }
         }
