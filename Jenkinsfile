@@ -15,11 +15,13 @@ pipeline {
                 echo "Building.."
                 echo "Версия СПО ${VERSION}"
                 echo "${COMMENT}"
+                echo "ansible --version"
             }
         }
         stage('Test') {
             steps {
                 echo "Testing.."
+                echo "git --version"
             }
         }
         stage('Deploy') {
@@ -27,6 +29,7 @@ pipeline {
                 echo "Deploying...."
                 echo "Версия СПО ${VERSION}"
                 echo "Устанавливаем на стенд ${ENV}"
+                echo "uptime -r"
             }
         }
     }
