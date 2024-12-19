@@ -24,6 +24,11 @@ pipeline {
                 sh ("git --version")
             }
         }
+
+        stage('Approve') {
+            input 'Do you approve deployment?'
+        }
+
         stage('Deploy') {
             steps {
                 echo "Deploying...."
