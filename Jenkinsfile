@@ -29,7 +29,7 @@ pipeline {
                 echo "Deploying...."
                 echo "Версия СПО ${VERSION}"
                 echo "Устанавливаем на стенд ${ENV}"
-                sh ("uptime -r")
+                sh ("uptime -p")
             }
         }
     }
