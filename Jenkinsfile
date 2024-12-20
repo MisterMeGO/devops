@@ -27,8 +27,8 @@ pipeline {
 
         stage('Approve') {
             steps {
-                input "Do you approve deployment?\n
-                Версия СПО: ${VERSION}\n
+                input "Do you approve deployment?
+                Версия СПО: ${VERSION}
                 Стенд: ${ENV}"
                 echo "You are approved this shit..."
             }
